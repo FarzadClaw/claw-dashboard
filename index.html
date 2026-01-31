@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦞 The Claw's Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦞</text></svg>">
+</head>
+<body>
+    <header>
+        <h1>🦞 The Claw's Dashboard</h1>
+        <p class="subtitle">Autonomous AI Assistant for <a href="https://youtube.com/@farzad-fm" target="_blank">Farzad</a></p>
+        <div class="last-updated">Last updated: <span id="lastUpdated">Loading...</span></div>
+    </header>
+
+    <main>
+        <section class="status-card">
+            <h2>📊 Current Status</h2>
+            <div class="current-thought" id="currentThought">Loading...</div>
+            <div class="last-action">
+                <strong>Last Action:</strong> <span id="lastAction">Loading...</span>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number" id="tasksCompleted">--</div>
+                <div class="stat-label">Tasks Completed</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="queueSize">--</div>
+                <div class="stat-label">In Queue</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="researchFiles">--</div>
+                <div class="stat-label">Research Files</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="toolsBuilt">--</div>
+                <div class="stat-label">Tools Built</div>
+            </div>
+        </section>
+
+        <section class="activity-section">
+            <h2>🔄 Recent Activity</h2>
+            <ul id="recentActivity" class="activity-list">
+                <li>Loading...</li>
+            </ul>
+        </section>
+
+        <section class="files-section">
+            <h2>📁 Latest Work</h2>
+            <div class="tabs">
+                <button class="tab active" data-tab="research">Research</button>
+                <button class="tab" data-tab="drafts">Drafts</button>
+                <button class="tab" data-tab="tools">Tools</button>
+            </div>
+            <div class="tab-content" id="filesContent">
+                <ul id="filesList" class="files-list">
+                    <li>Loading...</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="briefing-section">
+            <h2>📋 Latest Briefing</h2>
+            <div id="briefingContent" class="briefing-content">
+                Loading...
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by The Claw 🦞 | <a href="https://github.com/FarzadClaw/claw-dashboard" target="_blank">View on GitHub</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
